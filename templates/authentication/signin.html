@@ -8,14 +8,15 @@
 <body>
     <h3>Sign In</h3>
     <form action="/signin" method="post">
-    {% csrf_token %}
+        {% csrf_token %}
         <label for="">username</label>
-        <input type="text" id="username" name = "Enter your username" required>
+        <input type="text" id="username" name="username" placeholder = "Enter your username" required>
         <br/>
         <label for="">Password</label>
         <input type="password" id="password" name="password" placeholder="creat password" required>
         <br/>
         <button type="submit">SignIn</button>
     </form>
+    <script src="" async defer></script>
 </body>
 </html>
