@@ -3,19 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign In</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://source.unsplash.com/random');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <h3>Sign In</h3>
     <form action="/signin" method="post">
         {% csrf_token %}
-        <label for="">username</label>
-        <input type="text" id="username" name="username" placeholder = "Enter your username" required>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
         <br/>
-        <label for="">Password</label>
-        <input type="password" id="password" name="password" placeholder="creat password" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create password" required>
         <br/>
-        <button type="submit">SignIn</button>
+        <button type="submit">Sign In</button>
     </form>
     <script src="" async defer></script>
 </body>
